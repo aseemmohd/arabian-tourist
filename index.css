@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: auto;
+}
+
 /* header */
 .header {
     width: 100%;
@@ -18,13 +22,16 @@ nav {
     background-color: rgba(119, 116, 116, 0.295);
     width: 100%;
 }
-
+.navlogo{
+    width: 130px;
+    height: 110px;
+}
 
 /* home */
 .main {
     background-color: rgba(255, 68, 0, 0.829);
     padding: 40px 20px;
-    height: 68vh;
+    height: 68vh
 }
 
 .head1 {
@@ -37,9 +44,20 @@ nav {
     font-size: 40px;
 
 }
-.txt2{
+
+.txt2 {
     font-size: 35px;
-    font-weight:600;
+    font-weight: 600;
+}
+
+.txt3 {
+    font-size: 55px;
+    font-weight: 800;
+}
+
+.img5 {
+    height: 150px;
+    width: 180px;
 }
 
 
@@ -130,6 +148,7 @@ nav {
 
 
 /* about us */
+
 .cards1 {
     grid-template-columns: auto auto auto auto;
     gap: 50px;
@@ -138,6 +157,11 @@ nav {
 
 .about {
     padding: 60px 70px;
+}
+
+.card-text {
+    font-size: 38px;
+    line-height: 40px;
 }
 
 .card {
@@ -191,6 +215,13 @@ nav {
     color: white;
 }
 
+.desert {
+    padding-left: 30px;
+}
+
+.packages {
+    padding: 30px 30px;
+}
 
 
 
@@ -325,6 +356,17 @@ nav {
     .icons2 {
         flex-direction: column;
         align-items: flex-start;
+        transition: all .7s ease;
+    }
+
+    .img5 {
+        height: 180px;
+        width: 200px;
+        transition: all .7s ease;
+    }
+
+    .txt2 {
+        font-size: 55px;
     }
 
 }
@@ -469,18 +511,29 @@ nav {
     .image5 {
         transition: all .9s ease;
     }
-    .desert{
 
+    .img5 {
+        height: 160px;
+        width: 180px;
+        transition: all .7s ease;
     }
 
+    .txt2 {
+        font-size: 45px;
+    }
 
 }
 
 @media screen and (max-width:650px) {
     .main {
-        padding-bottom: 180px;
-        gap: 10px;
-        
+        padding-bottom: 160px;
+        gap: 80px;
+        height: 600px;
+
+    }
+    .navlogo{
+        width: 100px;
+        height: 80px;
     }
 
     .head {
@@ -489,6 +542,11 @@ nav {
 
     .head1 {
         font-size: 80px;
+    }
+
+    .head,
+    .head1 {
+        transition: all .7s ease;
     }
 
     .cards1 {
@@ -523,4 +581,167 @@ nav {
         padding: 30px 5px;
     }
 
+}
+
+@media (max-width:520px) {
+
+    .txt2 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .image3 {
+        width: 200px;
+        height: 270px;
+        right: 405px;
+    }
+
+    .image2 {
+        height: 230px;
+        width: 160px;
+        right: 570px;
+    }
+
+    .image4 {
+        height: 230px;
+        width: 160px;
+        right: 270px;
+    }
+
+    .image2,
+    .image3,
+    .image4 {
+        transition: all .5s ease;
+    }
+
+    .desert {
+        font-size: 35px;
+    }
+
+    .card-text {
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    .head1 {
+        font-size: 60px;
+    }
+
+    .head {
+        width: 430px;
+    }
+
+    .head2 {
+        font-size: 25px;
+    }
+
+    .head,
+    .head1,
+    .head2 {
+        transition: all .7s ease;
+    }
+}
+
+@media (max-width:465px) {
+    .txt3 {
+        font-size: 30px;
+        font-weight: 800;
+    }
+    .txt5{
+        text-align: justify;
+    }
+
+    .image3 {
+        width: 180px;
+        height: 250px;
+        right: 415px;
+    }
+
+    .image2 {
+        height: 210px;
+        width: 140px;
+        right: 560px;
+    }
+
+    .image4 {
+        height: 210px;
+        width: 140px;
+        right: 303px;
+    }
+
+    .image2,
+    .image3,
+    .image4 {
+        transition: all .5s ease;
+    }
+
+    .main {
+        padding-bottom: 150px;
+        gap: 50px;
+        height: 550px;
+
+    }
+
+    .txt2 {
+        font-size: 26px;
+    }
+
+    .second {
+        gap: 5px;
+    }
+
+    .img5 {
+        height: 120px;
+        width: 150px;
+    }
+
+    .head {
+        width: 380px;
+    }
+
+    .left {
+        gap: 7px;
+    }
+
+    .desert {
+        font-size: 30px;
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
+@media (max-width:451px) {
+    .desert {
+        font-size: 25px;
+    }
+
+    .packages {
+        padding: 10px 8px;
+    }
+}
+
+@media (max-width:403px) {
+    .image3 {
+        width: 150px;
+        height: 220px;
+        right: 430px;
+    }
+
+    .image2 {
+        height: 190px;
+        width: 120px;
+        right: 550px;
+    }
+
+    .image4 {
+        height: 190px;
+        width: 120px;
+        right: 340px;
+    }
+
+    .image2,
+    .image3,
+    .image4 {
+        transition: all .5s ease;
+    }
 }
