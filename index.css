@@ -737,7 +737,7 @@ nav {
     .image4 {
         height: 190px;
         width: 120px;
-        right: 340px;
+        right: 333px;
     }
 
     .image2,
@@ -751,6 +751,15 @@ nav {
     
     }
     .head{
-        width: 350px;
+        width: 320px;
+    }
+    .head2{
+        font-size: 23px;
+    }
+    .head1{
+        font-size: 45px;
+    }
+    .about{
+        padding: 20px 9px;
     }
 }
