@@ -744,4 +744,12 @@ nav {
     .image4 {
         transition: all .5s ease;
     }
+    .main{
+        height: 500px;
+        padding-bottom: 120px;
+    
+    }
+    .head{
+        width: 350px;
+    }
 }
